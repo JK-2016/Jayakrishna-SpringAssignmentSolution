@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot-StudentRegistration.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot-StudentRegistration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studentregistration/studentregistration/studentregistration.iml" filepath="$PROJECT_DIR$/studentregistration/studentregistration/studentregistration.iml" />
+    </modules>
+  </component>
+</project>
