@@ -5,7 +5,7 @@
    </head>
 
    <body>
-      <h2>Student Details Update</h2>
+      <h2 style="background-color:powderblue;">Update Student Details </h2>
 
       <form:form method = "POST" action = "update" >
          <table>
@@ -31,8 +31,9 @@
             </tr>
 
             <tr>
+               <td></td>
                <td colspan = "2">
-                  <input type = "submit" value = "Update"/>
+                  <input style="font-size: 14px;border-radius: 8px;" type = "submit" value = "Update"/>
                </td>
             </tr>
          </table>

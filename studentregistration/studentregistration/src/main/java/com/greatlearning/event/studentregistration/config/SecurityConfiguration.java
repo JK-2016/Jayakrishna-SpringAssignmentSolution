@@ -39,8 +39,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginProcessingUrl("/login")
                 //.successForwardUrl("/event/homepage").permitAll()
-                //.and()
-                //.logout().logoutSuccessUrl("/login")
+                .and()
+                .logout().logoutSuccessUrl("/login")
                 .permitAll().and().cors().and().csrf().disable();
     }
 

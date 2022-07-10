@@ -5,7 +5,7 @@
    </head>
 
    <body>
-      <h2>Student Registration</h2>
+      <h2 style="background-color:powderblue;">Student Registration</h2>
 
       <form:form method = "POST" action = "registerStudent" >
          <table>
@@ -29,10 +29,11 @@
                <td><form:label path = "country">Country</form:label></td>
                <td><form:input path = "country" /></td>
             </tr>
-
+            <tr></tr>
             <tr>
+                <td></td>
                <td colspan = "2">
-                  <input type = "submit" value = "Submit"/>
+                  <input style="font-size: 14px;border-radius: 8px;" type = "submit" value = "Submit"/>
                </td>
             </tr>
          </table>

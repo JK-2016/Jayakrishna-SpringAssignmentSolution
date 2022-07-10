@@ -3,34 +3,41 @@
 <!DOCTYPE html>
 <html>
 <head><%@ page isELIgnored="false" %>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Debate Registration</title>
-<!--link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
-<script src="<c:url value="/resources/js/jquery-1.11.1.min.js" />"></script>
-<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Student Registration</title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+           border-collapse: collapse;
+        }
+        td {
+          text-align: center;
+        }
+        table tr:nth-child(even) { background-color:#dddddd; }
+        table style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"
+    </style>
 </head>
 <body>
  <div class="container">
   <div class="col-md-offset-1 col-md-10">
-   <h2>Event - Debate Registered Students</h2>
-   <hr />
+   <h1  style="background-color:powderblue;text-align: center;" >Event - Debate </h1>
 
-   <input type="button" value="Register Student"
-    onclick="window.location.href='showStudentform';"
-    class="btn btn-primary" />
-    <br/><br/>
-   <div class="panel panel-info">
+    <!--br/><br/-->
+
     <div class="panel-heading">
-     <div class="panel-title">Student List</div>
+     <div class="panel-title" style="font-size: 25px;text-align: center;" > Registered Students</div>
     </div>
+    <br/>
     <div class="panel-body">
-     <table class="table table-striped table-bordered">
+     <table style="width:100%;" class="table table-striped table-bordered">
       <tr>
-       <th>Student Id</th>
-       <th>First Name</th>
-       <th>Last Name</th>
-       <th>Course</th>
-       <th>Country</th>
+       <th style="background-color:powderblue;">Student Id</th>
+       <th style="background-color:powderblue;">First Name</th>
+       <th style="background-color:powderblue;">Last Name</th>
+       <th style="background-color:powderblue;">Course</th>
+       <th style="background-color:powderblue;">Country</th>
+       <th style="background-color:powderblue;">Action</th>
       </tr>
 
       <!-- loop over and print our customers -->
@@ -72,6 +79,14 @@
 
  </div>
  <br>
+  <input type="button" value="Register Student"
+     onclick="window.location.href='showStudentform';"
+     class="btn btn-primary"
+     style="font-size: 14px;border-radius: 8px;"/>
+ <br>
+  <br>
+
+
    <c:url var="homepage" value="/event/homePage"></c:url>
  <a href  = "${homepage}">Home Page</a>
 </body>
