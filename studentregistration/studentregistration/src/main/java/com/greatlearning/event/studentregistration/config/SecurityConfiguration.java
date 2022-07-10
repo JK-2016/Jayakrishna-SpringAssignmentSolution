@@ -40,23 +40,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .loginProcessingUrl("/login")
                 //.successForwardUrl("/event/homepage").permitAll()
                 .and()
-                .logout().logoutSuccessUrl("/login")
-                .permitAll().and().cors().and().csrf().disable();
+                .logout().logoutSuccessUrl("/login").permitAll()
+                .and()
+                .exceptionHandling().accessDeniedPage("/event/403")
+                .and()
+                .cors().and().csrf().disable();
     }
 
 }
-//
-//	// If you don't want to encode the created password, you can write the belowbean
-//	// method, FYI: not recommended for Prod env
-//
-//	@Bean
-//	PasswordEncoder getPasswordEncoder() {
-//		return NoOpPasswordEncoder.getInstance();
-//	}
-//
-//	@Override
-//	public void configure(WebSecurity web) throws Exception {
-//		web.ignoring().antMatchers("/h2-console/**");
-//
-//	}
-//}
+
